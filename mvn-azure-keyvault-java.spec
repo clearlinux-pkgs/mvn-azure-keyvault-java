@@ -4,11 +4,12 @@
 #
 Name     : mvn-azure-keyvault-java
 Version  : 1.0.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/Azure/azure-keyvault-java/archive/v1.0.0.tar.gz
 Source0  : https://github.com/Azure/azure-keyvault-java/archive/v1.0.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.jar
 Source2  : https://repo1.maven.org/maven2/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.pom
+Source3  : https://repo1.maven.org/maven2/com/microsoft/azure/azure-keyvault-parent/1.0.0/azure-keyvault-parent-1.0.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -37,6 +38,9 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azu
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-core/1.0.0
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-parent/1.0.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-parent/1.0.0/azure-keyvault-parent-1.0.0.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -45,3 +49,4 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/microsoft/azure/azu
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.jar
 /usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.pom
+/usr/share/java/.m2/repository/com/microsoft/azure/azure-keyvault-parent/1.0.0/azure-keyvault-parent-1.0.0.pom
