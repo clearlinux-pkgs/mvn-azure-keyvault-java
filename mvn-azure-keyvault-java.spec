@@ -4,7 +4,7 @@
 #
 Name     : mvn-azure-keyvault-java
 Version  : 1.0.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/Azure/azure-keyvault-java/archive/v1.0.0.tar.gz
 Source0  : https://github.com/Azure/azure-keyvault-java/archive/v1.0.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/microsoft/azure/azure-keyvault-core/1.0.0/azure-keyvault-core-1.0.0.jar
